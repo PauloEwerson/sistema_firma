@@ -33,7 +33,7 @@ namespace FirmaSistema
             Idade = idade;
             DataNascimento = dataNascimento;
             DataContratacao = DateTime.Now;
-            SalarioMensal = salarioMensal < SALARIO_MINIMO ? SALARIO_MINIMO : salarioMensal;
+            SalarioMensal = salarioMensal;
         }
 
         /// <summary>
