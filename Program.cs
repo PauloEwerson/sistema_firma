@@ -89,7 +89,7 @@ namespace FirmaSistema
             var empregados = firma.ListarTodosEmpregados();
             foreach (var empregado in empregados)
             {
-                Console.WriteLine($"Nome: {empregado.PrimeiroNome} {empregado.Sobrenome}, Matrícula: {empregado.Matricula}, Salário: {empregado.SalarioMensal}");
+                Console.WriteLine($"Nome: {empregado.PrimeiroNome} {empregado.Sobrenome}, Matrícula: {empregado.Matricula}, Salário: {empregado.SalarioMensal.ToString("C")}");
             }
         }
 
@@ -130,7 +130,7 @@ namespace FirmaSistema
 
             double salarioAnual = firma.ListarSalarioAnual(primeiroNome, sobrenome);
 
-            Console.WriteLine($"Salário anual de {primeiroNome} {sobrenome}: {salarioAnual}");
+            Console.WriteLine($"Salário anual de {primeiroNome} {sobrenome}: {salarioAnual.ToString("C")}");
         }
     }
 }
